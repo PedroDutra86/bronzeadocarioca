@@ -7,9 +7,7 @@
   .toggleDesktop {
     display: none;
   }
-  .nav-icons {
-    display: none;
-  }
+
   .logo {
     width: 3rem;
   }
@@ -71,9 +69,7 @@
   .toggleDesktop {
     display: none;
   }
-  .nav-icons {
-    display: none;
-  }
+
   .logo {
     width: 3rem;
   }
@@ -127,5 +123,25 @@
   }
   .signature {
     left: 18%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .nav-icons .icon {
+    display: none;
+  }
+
+  .nav-icons .cart-icon,
+  .nav-icons .cart-count {
+    display: inline-block;
+  }
+  .nav-icons .cart-icon {
+    position: absolute;
+    right: 10.5%;
+    top: 5%;
+  }
+  .nav-icons .cart-count {
+    position: absolute;
+    right: 8%;
   }
 }
