@@ -83,8 +83,8 @@
     align-items: center;
   }
   header {
-    background-size: 200%;
-    background-position-x: 30%;
+    background-size: cover;
+    background-position-x: 0%;
   }
   .header-info {
     width: 200px;
