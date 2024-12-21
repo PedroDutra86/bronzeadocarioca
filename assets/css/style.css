@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  padding: 0 164px;
+}
+
+header {
+  padding: 2rem 0;
+  height: 80vh;
+  background-image: url(../images/image1.jpg);
+  background-size: cover;
+  background-position-y: 39%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.toggleMobile {
+  background-image: url("../svgs/menu.svg");
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.off {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-links ul::after {
+  content: "";
+  background-image: url("../svgs/arrow.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  top: 35%;
+  margin-left: 0.3rem;
+}
+
+.nav-links ul:hover {
+  color: #ff6f00;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.icon {
+  max-width: 1.25rem;
+  cursor: pointer;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cart-count {
+  font-size: 0.8rem;
+  position: absolute;
+  right: 132px;
+  top: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.2rem;
+  border-radius: 1rem;
+  width: 1.4rem;
+  text-align: center;
+}
+
+.header-info {
+  color: white;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header-info h6 {
+  font-family: Pacifico;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.text-cto {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.orange-dot {
+  color: #ff6f00;
+  font-weight: 700;
+}
+
+.button-cto {
+  width: 168px;
+  padding: 0.8rem 1.2rem;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #ff6f00;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.button-cto:hover {
+  border-radius: 1rem;
+  background-color: #ff6f00;
+  color: white;
+}
+
+.header-socials {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  gap: 1rem;
+}
+
+.sells-box {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+
+h2 {
+  color: black;
+  font-family: Pacifico;
+  font-size: 1.3rem;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.box {
+  width: 285px;
+  height: 368px;
+  background-color: #f0f0f0;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4 {
+  background-color: #d9d9d9;
+}
+
+.content-topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  grid-template-areas:
+    "grid1 grid2 grid2"
+    "grid1 grid3 grid4";
+  gap: 0.6rem;
+  margin-top: 1.3rem;
+}
+
+.caixa1 {
+  grid-area: grid1;
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1717062529011-b1c63627b96f?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: contain;
+  transition: 0.3s ease-in;
+}
+.caixa1::after {
+  content: "Saiba mais >";
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: underline;
+  transition: 0.05s ease-in;
+}
+.caixa1:hover::after {
+  content: "O melhor do mundo feminino";
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  top: 1rem;
+  right: 1rem;
+  font-weight: 600;
+  width: 10rem;
+}
+
+.caixa1:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+.caixa2 {
+  position: relative;
+  grid-area: grid2;
+  background-image: url("https://images.unsplash.com/photo-1657651315305-a1b608182927?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  transition: 0.3s ease-in;
+}
+.caixa2::after {
+  content: "Saiba mais >";
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: underline;
+  transition: 0.05s ease-in;
+}
+.caixa2:hover::after {
+  content: "Conheça mais sobre nossas maravilhosas linhas t-shirts básicas com um super desconto";
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  left: 1rem;
+  top: 1rem;
+  font-weight: 600;
+  width: 22rem;
+}
+
+.caixa2:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+.caixa3 {
+  position: relative;
+  grid-area: grid3;
+  background-image: url("https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: contain;
+  transition: 0.3s ease-in;
+}
+.caixa3::after {
+  content: "Saiba mais >";
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: underline;
+  transition: 0.05s ease-in;
+}
+.caixa3:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+.caixa3:hover::after {
+  content: "Tenis com até 50% off";
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  top: 1rem;
+  left: 1rem;
+  font-weight: 600;
+  width: 6rem;
+}
+
+.caixa4 {
+  position: relative;
+  grid-area: grid4;
+  background-image: url("../images/pillowLogo.png");
+  background-size: cover;
+  background-position-y: 30%;
+  transition: 0.3s ease-in;
+}
+.caixa4::after {
+  content: "Saiba mais >";
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: underline;
+  transition: 0.05s ease-in;
+}
+.caixa4:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+.caixa4:hover::after {
+  content: "Novidades para quem gosta da moda carioca";
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  top: 1rem;
+  left: 1rem;
+  font-weight: 600;
+  width: 10rem;
+}
+
+footer {
+  margin-top: 2rem;
+  height: 12rem;
+  background-color: #3d8ab3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.questions {
+  display: flex;
+  position: relative;
+  color: white;
+  justify-content: space-between;
+}
+
+.signature {
+  position: absolute;
+  color: white;
+  bottom: 0.5rem;
+  left: 40%;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.questions ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.questions ul li {
+  margin-left: 0.8rem;
+  list-style: none;
+}
+
+.questions ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.image1 {
+  width: 7rem;
+}
+
+.image2 {
+  width: 3rem;
+}
+
+.list-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.info-box {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+.photo {
+  background-color: white;
+  height: 80%;
+  width: 100%;
+}
+
+.box-title {
+  position: absolute;
+  font-family: Pacifico;
+  color: rgba(0, 0, 0, 0.6);
+  top: 0.5rem;
+  left: 80%;
+  line-height: 1rem;
+  transform: rotateZ(8deg);
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.4rem;
+  margin: 1rem 0;
+}
+
+.box-button {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.box-price {
+  font-family: Pacifico;
+  font-size: 1.3rem;
+}
+
+.cents {
+  font-size: 0.8rem;
+}
+
+.box-button {
+  background-color: #27ae60;
+  border: none;
+  border-radius: 0.5rem;
+  width: 2.5rem;
+  transition: 0.3s ease-in;
+}
+
+.box-button::after {
+  content: "+";
+  color: white;
+  font-size: 1.3rem;
+}
+
+.box-button:hover {
+  background-color: transparent;
+  border: 1px solid #27ae60;
+  cursor: pointer;
+}
+
+.box-button:hover::after {
+  color: #27ae60;
+  font-size: 1.5rem;
+}
+
+.photo1 {
+  background-image: url("https://static.dafiti.com.br/p/volcom-camiseta-volcom-reta-deadly-stone-caramelo-7686-67219231-1-zoom.jpg?ims=filters:quality(70)");
+  background-size: cover;
+  transition: 0.3s ease-in;
+}
+
+.photo1:hover {
+  background-image: url("https://static.dafiti.com.br/p/volcom-camiseta-volcom-reta-deadly-stone-caramelo-7689-67219231-2-zoom.jpg?_gl=1*1vii9tw*_gcl_aw*R0NMLjE3MzQ4MDYzODIuQ2p3S0NBaUE2NW03QmhBd0Vpd0FBZ3U0SlBRaGw4YkYyWVVfZUotMVBfVjJXdTFPUUlGbjFWQ0lMUmxEUTRuNF9pYmxYTG9YRG0tZ1hob0NIcGtRQXZEX0J3RQ..*_gcl_au*NDM0ODk2ODMzLjE3MzQ4MDYzNzI.*_ga*ODczNTY0NzgxLjE3MzQ4MDYzNzM.*_ga_4X2HC5Z756*MTczNDgwNjM3My4xLjEuMTczNDgwNjQ2NS4zMi4wLjM3MzI2Mzc2MQ..?ims=filters:quality(70)");
+  background-size: cover;
+}
+
+.photo2 {
+  background-image: url("https://t-static.dafiti.com.br/KNKXTf6FQsIVGur2j6k6IZlRAXM=/fit-in/430x623/static.dafiti.com.br/p/lança-perfume-regata-canelada-lança-perfume-ajustada-logo-off-white-4405-87452341-1-zoom.jpg");
+  background-size: cover;
+  transition: 0.3s ease-in;
+}
+.photo2:hover {
+  background-image: url("https://static.dafiti.com.br/p/lan%C3%A7a-perfume-regata-canelada-lan%C3%A7a-perfume-ajustada-logo-off-white-4405-87452341-4-zoom.jpg?ims=filters:quality(70)");
+  background-size: cover;
+}
+
+.photo3 {
+  background-image: url("https://t-static.dafiti.com.br/xhRIZFpUntUI75hQP56v7vD8Fic=/fit-in/430x623/static.dafiti.com.br/p/lavin-basic-camisa-térmica-infantil-com-proteção-solar-uv50-manga-longa-unissex-tamanhos-6-ao-16-lavin-basic-15-a--rosa-6566-66264441-1-zoom.jpg");
+  background-size: cover;
+  transition: 0.3s ease-in;
+}
+
+.photo3:hover {
+  background-image: url("https://t-static.dafiti.com.br/PD0vDchdhCAnmKJpAxmkgPqQnpw=/fit-in/430x623/static.dafiti.com.br/p/lavin-basic-camisa-térmica-infantil-com-proteção-solar-uv50-manga-longa-unissex-tamanhos-6-ao-16-lavin-basic-15-a--rosa-6571-66264441-2-zoom.jpg");
+  background-size: cover;
+}
