@@ -84,6 +84,7 @@
   }
   header {
     background-size: 150%;
+    background-size: cover;
   }
   .header-info {
     width: 200px;
